@@ -3,7 +3,6 @@ window.app.views.LoginPage = Backbone.View.extend({
 
   initialize: function(options) {
     this.AuthenticationService = options.AuthenticationService;
-    _.bindAll(this);
   },
 
   events: {

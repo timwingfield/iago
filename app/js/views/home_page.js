@@ -3,7 +3,7 @@ window.app.views.HomePage = Backbone.View.extend({
   template: JST["app/templates/home.us"],
 
   initialize: function(options) {
-    _.bindAll(this);
+    _.bindAll(this, 'updateMessage');
     this.AuthenticationService = options.AuthenticationService;
     this.model = new window.app.models.HomePage();
     this.model.on("change:message", this.updateMessage);
@@ -25,7 +25,7 @@ window.app.views.HomePage = Backbone.View.extend({
   },
 
   updateMessage: function(model, message) {
-    this.$(".alert-box").text(message);
+    this.$el.find(".alert-box").text(message);
   },
 
   logout: function() {
