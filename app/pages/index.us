@@ -13,5 +13,6 @@
     </div>
 
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">Parse.initialize("IjL27YXdytMdcSYLOQFkQgM7QEwQl1XnVCHLWAVZ", "Vfqd4tEWOXZStz35WJJbU4hFscBqCwGNDGF5EPLe");</script>
   </body>
 </html>
